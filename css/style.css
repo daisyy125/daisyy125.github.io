@@ -1,0 +1,20 @@
+/* <place google fonts link here>
+ */
+
+ /* icons: https://konpa.github.io/devicon/ */
+
+ /* color paletter: http://colormind.io/bootstrap/
+  color: #B59DA8
+  */
+
+  body {
+      background-color: #B59DA8;
+  }
+
+  header {
+      background-image: url(../images/pexels-photo-262488.jpeg);
+  }
+
+  img {
+      display: none;
+  }

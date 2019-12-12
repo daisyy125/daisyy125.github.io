@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Daisy Yau | Web Developer</title>
+</head>
+<body>
+    <header>
+        <nav>
+            <h1>Daisy Yau</h1>
+            <h2>Junior Web Developer</h2>
+            <img src="images/profile.jpg" alt="Daisy Yau" />
+            <a href="#aboutMe">About Me</a>
+            <a href="#technologies">Technologies</a>
+            <a href="#projects">Projects</a>
+            <a href="#contact">Contact</a>
+        </nav>
+        <section id="aboutMe">
+            <h2>About Me</h2>
+            <p>Hello, I'm Daisy! I'm a fresh-faced Junior Web Developer based in NYC, recently completed my Front-End Web Development course with General Assembly in May 2019. Currently continuing my education with General Assembly and joined the Software Engineering Immersive course <em>(scheduled to complete by end of March 2020)</em>. My focus is to create clean, efficient and fun codes mainly using HTML5, CSS3 and Javascript.</p>
+                
+            <p>My background is in Digital Online Advertising (yes, like pop-up ads). Working with amazing developers & engineers, it sparked such interests that I decided I want to be one of them. Hence, here I am! As a bonus, I also love puzzles and coding definitely feels like one giant puzzle with endless results!</p>
+            
+            <p>I'm always striving to learn new things as we're in the world filled with technology that's constantly changing. If you have any projects to share where I can learn from, feel free to share the link in the Contact section below!</p>
+        </section>
+        <section id="technologies">
+            <h2>Technologies</h2>
+            <div>
+                <i class="fab fa-html5"></i>
+                <p>HTML</p>
+            </div>
+            <div>
+                <i class="fab fa-css3-alt"></i>
+                <p>CSS</p>
+            </div>
+            <div>
+                <i class="fab fa-js"></i>
+                <p>Javascript</p>
+            </div>
+        </section>
+        <section id="projects">
+            <h2>Projects</h2>
+            <div class="container">
+                <div class="item">Project #1</div>
+                <div class="item">Project #2</div>
+                <div class="item">Project #3</div>
+                <div class="item">Project #4</div>
+            </div>
+        </section>
+        <section id="contact">
+            <h2>Contact</h2>
+            <p>Email: daisy125@gmail.com</p>
+            <br>
+            <i class="far fa-envelope"></i>
+            <i class="fab fa-linkedin"></i>
+            <i class="fab fa-github-square"></i>
+            <br>
+            <form action="#index.html">
+                Want to share a project? <input type="text" placeholder="Project Link" id="projectText">
+                <button type="submit" name="Submit" id="submitButton">Submit</button>
+                <div id="projectModal" class="modal">
+                <div class="modal-text">
+                    <span class="close">&times;</span>
+                    <p>Thanks for sharing your project! Can't wait to learn more!</p>
+                </div>
+                </div>
+            </form>
+        </section>
+    </header>
+    <script src="js/main.js"></script>
+</body>
+</html>
