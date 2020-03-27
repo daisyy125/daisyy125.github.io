@@ -1,20 +1,321 @@
-/* <place google fonts link here>
- */
-
  /* icons: https://konpa.github.io/devicon/ */
+* {
+    margin: 0;
+    padding: 0;
+}
 
- /* color paletter: http://colormind.io/bootstrap/
-  color: #B59DA8
-  */
+body {
+    background-image: url(../images/bricks-brickwall-brickwork-1092364.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: black;
+    font-family: "Montserrat", sans-serif;
+    margin: 80px auto;
+    max-width: 1500px;
+}
 
-  body {
-      background-color: #B59DA8;
-  }
+h1 {
+    margin-bottom: 30px;
+}
 
-  header {
-      background-image: url(../images/pexels-photo-262488.jpeg);
-  }
+h2 {
+    font-size: 26px;
+}
 
-  img {
-      display: none;
-  }
+h1, h2 {
+    font-family: "Kaushan Script", sans-serif;
+    padding: 10px 0;
+    text-align: center;
+}
+
+img {
+    display: inline-block;
+    height: 350px;
+}
+
+/* .box{
+    height: 200px;
+} */
+
+.main_flip {
+    background-color: transparent;
+    width: 100%;
+    height: auto;
+    perspective: 1000px;
+}
+
+.flip_card {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 0.9s;
+    transform-style: preserve-3d;
+}
+
+.main_flip:hover .flip_card {
+    transform: rotateY(180deg);
+}
+
+.item_front, .item_back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+}
+
+.item_back {
+    color: white;
+    transform: rotateY(180deg);
+}
+
+.back1 {
+    background: #d87093;
+}
+
+.back4 {
+    background: #d1bbfc;
+    color: white;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.back4 img {
+    height: 200px;
+    width: 230px;
+}
+
+.hobby_item {
+    margin: 30px auto;
+    width: 45%;
+}
+
+.hobby2 {
+    border-left: 2px solid white;
+    padding-left: 15px;
+}
+
+.back6 {
+    background: #48d1cc;
+}
+
+.container {
+    display: grid;
+    grid-gap: 80px;
+    grid-template-columns: 2fr 1fr 2fr;
+    grid-template-rows: 2fr;
+    margin: 0 auto;
+}
+
+.item1 {
+    border: 20px ridge darkgrey;
+    height: 430px;
+    width: 600px;
+}
+
+.item2 {
+    background: lightgrey;
+    font-size: 28px;
+    padding: 40px 15px;
+    text-align: center;
+    border-top: 70px double #d87093;
+    border-right: 70px solid #48d1cc;
+    border-left: 70px solid #9370d8;
+    border-bottom: 70px double #daa520;
+}
+
+.item3 {
+    border: 25px double darkgrey;
+    grid-row: span 2;
+}
+
+.item3 .fab, .item3 .fas {
+    color: rgb(97, 95, 95);
+    font-size: 50px;
+}
+
+.item4 {
+    background-image: url(../images/time.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    border: 15px solid white;
+    color: grey;
+}
+
+.item5 {
+    background: white;
+    border: 14px groove white;
+    height: 250px;
+    margin-top: 80px;
+    text-align: center;
+    width: 350px;
+}
+
+.item5 h2 {
+    padding-bottom: 50px;
+}
+
+.item5 a {
+    color: black;
+    font-size: 20px;
+}
+
+.item5 a:hover {
+    color: grey;
+}
+
+.item5 .fab {
+    font-size: 40px;
+    padding: 20px 10px;
+}
+
+.item6 {
+    border: 15px groove darkgrey;
+    grid-column: span 3;
+    height: auto;
+}
+
+.tech_container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin: 0 auto;
+    padding: 20px;
+    width: 75%;
+}
+
+.tech_item {
+    margin: 25px 10px;
+    text-align: center;
+}
+
+.project_container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin: 0 auto;
+    width: 75%;
+}
+
+.project_item {
+    border: 12px double;
+    background: grey;
+    color: white;
+    margin: 50px auto;
+    height: 550px;
+}
+
+p {
+    font-size: 18px;
+    padding-top: 20px;
+}
+
+.description p {
+    font-size: 16px;
+    max-width: 430px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.description a {
+    color: #48d1cc;
+    display: inline-block;
+    padding-top: 15px;
+    padding-left: 40%;
+    text-align: center;
+    font-style: bold;
+}
+
+/* /////////////////////////
+//RESPONSIVE
+//////////////////////////*/
+
+@media screen and (max-width: 500px) {
+
+body {
+    margin: 20px auto;
+    width: 85%;
+}
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 0 auto;
+}
+
+h1 {
+    font-size: 24px;
+}
+
+h2 {
+    font-size: 20px;
+}
+
+p {
+    font-size: 16px;
+}
+
+img {
+    height: 250px;
+}
+
+.item1 {
+    height: 400px;
+    width: 600px;
+}
+
+.item2 {
+    border-top: 50px double #d87093;
+    border-right: 50px solid #48d1cc;
+    border-left: 50px solid #9370d8;
+    border-bottom: 50px double #daa520;
+    margin: 40px auto;
+}
+
+.item4 {
+    background-size: contain;
+    border: 10px solid white;
+    height: 262px;
+    margin: 40px auto;
+}
+
+.item4 h2 {
+    padding-top: 30px;
+}
+
+.item4 p {
+    padding-top: 110px;
+}
+
+.item5 {
+    margin: 0 auto;
+}
+
+.item6 {
+    margin-top: 40px;
+}
+
+.project_item {
+    height: 490px;
+}
+
+.description p {
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.hobby_item {
+    margin: 20px auto;
+}
+
+.hobby_item p {
+    padding-top: 15px;
+}
+
+.back4 img{
+    height: 150px;
+    width: 170px;
+}
+}

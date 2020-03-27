@@ -2,63 +2,138 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <link rel="icon" href="/images/favicon.ico" type="image/x-icon">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
     <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css?family=Allura|Kaushan+Script|Montserrat:400,700&display=swap"
+    rel="stylesheet">  
     <title>Daisy Yau | Web Developer</title>
 </head>
 <body>
-    <header>
-        <nav>
+    <main class="container">
+        <section class="item item1 main_flip" id="aboutMe">
+            <div class="flip_card">
+                <div class="item_front">
+                    <h2>About Me</h2>
+                    <img src="images/profile.jpg" alt="Daisy Yau"/>
+                </div>
+                <div class="item_back back1">
+                    <p>Hello, I'm Daisy! I'm a fresh-faced Software Engineer based in NYC, completed my Front-End Web Development course with General Assembly in May 2019. Had so much fun that I continued my education with General Assembly and joined the Software Engineering Immersive course (which I recently completed in March 2020). My focus is to create clean, efficient and fun codes mainly using HTML, CSS and Javascript.</p>
+                        
+                    <p>My background is in Digital Online Advertising (yes, like pop-up ads). Working with amazing developers & engineers, it sparked such interests that I decided I want to be one of them. Hence, here I am! As a bonus, I also love puzzles and coding definitely feels like one giant puzzle with endless results!</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="item item2" id="name">
             <h1>Daisy Yau</h1>
-            <h2>Junior Web Developer</h2>
-            <img src="images/profile.jpg" alt="Daisy Yau" />
-            <a href="#aboutMe">About Me</a>
-            <a href="#technologies">Technologies</a>
-            <a href="#projects">Projects</a>
-            <a href="#contact">Contact</a>
-        </nav>
-        <section id="aboutMe">
-            <h2>About Me</h2>
-            <p>Hello, I'm Daisy! I'm a fresh-faced Junior Web Developer based in NYC, recently completed my Front-End Web Development course with General Assembly in May 2019. Currently continuing my education with General Assembly and joined the Software Engineering Immersive course <em>(scheduled to complete by end of March 2020)</em>. My focus is to create clean, efficient and fun codes mainly using HTML5, CSS3 and Javascript.</p>
-                
-            <p>My background is in Digital Online Advertising (yes, like pop-up ads). Working with amazing developers & engineers, it sparked such interests that I decided I want to be one of them. Hence, here I am! As a bonus, I also love puzzles and coding definitely feels like one giant puzzle with endless results!</p>
-            
-            <p>I'm always striving to learn new things as we're in the world filled with technology that's constantly changing. If you have any projects to share where I can learn from, feel free to share the link in the Contact section below!</p>
+            <h2>Software Engineer</h2>
         </section>
-        <section id="technologies">
+
+        <section class="item item3" id="technologies">
             <h2>Technologies</h2>
-            <div>
-                <i class="fab fa-html5"></i>
-                <p>HTML</p>
-            </div>
-            <div>
-                <i class="fab fa-css3-alt"></i>
-                <p>CSS</p>
-            </div>
-            <div>
-                <i class="fab fa-js"></i>
-                <p>Javascript</p>
+            <div class="tech_container">
+                <div class="tech_item">
+                    <i class="fab fa-html5"></i>
+                    <p>HTML</p>
+                </div>
+                <div class="tech_item">
+                    <i class="fab fa-css3-alt"></i>
+                    <p>CSS</p>
+                </div>
+                <div class="tech_item">
+                    <i class="fab fa-js"></i>
+                    <p>Javascript</p>
+                </div>
+                <div class="tech_item">
+                    <i class="fab fa-react"></i>
+                    <p>React</p>
+                </div>
+                <div class="tech_item">
+                    <i class="fas fa-database"></i>
+                    <p>MongoDB</p>
+                </div>
+                <div class="tech_item">
+                    <i class="fab fa-python"></i>
+                    <p>Python</p>
+                </div>
+                <div class="tech_item">
+                    <i class="fas fa-database"></i>
+                    <p>PostgreSQL</p>
+                </div>
+                
             </div>
         </section>
-        <section id="projects">
-            <h2>Projects</h2>
-            <div class="container">
-                <div class="item">Project #1</div>
-                <div class="item">Project #2</div>
-                <div class="item">Project #3</div>
-                <div class="item">Project #4</div>
+        
+
+        <section class="item item4 main_flip" id="hobbies">
+            <div class="flip_card">
+                <div class="item_front">
+                    <h2>Hobbies</h2>
+                    <p>Besides coding, I definitely have other hobbies! Flip to see what my other interests are during my down time....</p>
+                </div>
+                <div class="item_back back4">
+                    <div class="hobby_item hobby1">
+                        <img src="images/books.jpg" alt="books"/>
+                        <p>Current Reading List for me to tackle!</p>
+                    </div>
+                    <div class="hobby_item hobby2">
+                        <img src="images/pottery.jpg" alt="pottery" />
+                        <p>Pottery - definitely saves me money on new dining ware.</p>
+                    </div>
+                </div>
             </div>
         </section>
-        <section id="contact">
+
+        <section class="item item5 main_flip" id="contact">
             <h2>Contact</h2>
-            <p>Email: daisy125@gmail.com</p>
+            <h4><a href="https://daisypictures.s3.us-east-2.amazonaws.com/Daisy+Resume.pdf">View My Resume</a></h4>
             <br>
-            <i class="far fa-envelope"></i>
-            <i class="fab fa-linkedin"></i>
-            <i class="fab fa-github-square"></i>
-            <br>
+            <a href="https://www.linkedin.com/in/daisyyau/"><i class="fab fa-linkedin"></i></a>
+            <a href="https://github.com/daisyy125"><i class="fab fa-github-square"></i></a>
+        </section>
+
+        <section class="item item6 main_flip" id="projects">
+            <h2>Projects</h2>
+            <div class="project_container">
+                <div class="project_item">
+                    <img src="images/project1.png">
+                    <div class="description">
+                        <h2>Project #1: Trivia Quiz</h2>
+                        <a href="https://github.com/daisyy125/ga-project-1">Repo link</a>
+                        <p>Created using Javascript, DOM manipulation and Flexbox to achieve the look and feel of a Jeopardy game to quiz new developers their knowledge.</p>
+                    </div>
+                </div>
+                <div class="project_item">
+                    <img src="images/project2.png">
+                    <div class="description">
+                        <h2>Project #2: Spelling BusyBees</h2>
+                        <a href="https://github.com/daisyy125/ga-project-2-spelling">Repo link</a>
+                        <p>Created using React, CSS and Dictionary 3rd party API. A dictionary web application for kids grade level 6-8 to use for intermediate word definitions.</p>
+                    </div>
+                </div>
+                <div class="project_item">
+                    <img src="images/project3.png">
+                    <div class="description">
+                        <h2>Project #3: Devating - Developers Dating app</h2>
+                        <a href="https://github.com/jadekang0611/devating-frontend/tree/master">Repo link</a>
+                        <p>Group project: created using React, Express, MongoDB, Mongoose, Axios, &Bootstrap. A matching dating app for developers based on their coding preferences.</p>
+                    </div>
+                </div>
+                <div class="project_item">
+                    <img src="images/project4.png">
+                    <div class="description">
+                        <h2>Project #4: Giftly Gift Ideas</h2>
+                        <a href="https://github.com/daisyy125/ga-project4">Repo link</a>
+                        <p>Created using React, Bootstrap, Django, PostgreSQL. A web app focused on providing gift ideals you're in search of for a giftee.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- <section class="item item7">
             <form action="#index.html">
                 Want to share a project? <input type="text" placeholder="Project Link" id="projectText">
                 <button type="submit" name="Submit" id="submitButton">Submit</button>
@@ -69,8 +144,8 @@
                 </div>
                 </div>
             </form>
-        </section>
-    </header>
-    <script src="js/main.js"></script>
+        </section> -->
+    </main>
+<script src="js/main.js"></script>
 </body>
 </html>
