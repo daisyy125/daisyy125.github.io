@@ -69,11 +69,11 @@ img {
 }
 
 .back1 {
-    background: #d87093;
+    background: #f8bcbb;
 }
 
 .back4 {
-    background: #d1bbfc;
+    background: #dccef7;
     color: white;
     display: flex;
     flex-wrap: wrap;
@@ -95,10 +95,6 @@ img {
     padding-left: 15px;
 }
 
-.back6 {
-    background: #48d1cc;
-}
-
 .container {
     display: grid;
     grid-gap: 80px;
@@ -108,24 +104,29 @@ img {
 }
 
 .item1 {
-    border: 20px ridge darkgrey;
+    background: white;
+    border: 15px solid #b8dfdc;
+    border-radius: 16px;
     height: 430px;
     width: 600px;
 }
 
 .item2 {
-    background: lightgrey;
+    background: white;
+    border-top: 50px double #dccef7;
+    border-right: 50px solid #b8dfdc;
+    border-left: 50px solid #f8bcbb;
+    border-bottom: 50px double #f3d893;
+    border-radius: 16px;
     font-size: 28px;
     padding: 40px 15px;
     text-align: center;
-    border-top: 70px double #d87093;
-    border-right: 70px solid #48d1cc;
-    border-left: 70px solid #9370d8;
-    border-bottom: 70px double #daa520;
 }
 
 .item3 {
-    border: 25px double darkgrey;
+    background: white;
+    border: 5px solid #f8bcbb;
+    border-radius: 16px;
     grid-row: span 2;
 }
 
@@ -139,12 +140,14 @@ img {
     background-repeat: no-repeat;
     background-size: cover;
     border: 15px solid white;
+    border-radius: 16px;
     color: grey;
 }
 
 .item5 {
     background: white;
-    border: 14px groove white;
+    border: 14px groove #dccef7;
+    border-radius: 16px;
     height: 250px;
     margin-top: 80px;
     text-align: center;
@@ -170,7 +173,9 @@ img {
 }
 
 .item6 {
-    border: 15px groove darkgrey;
+    background: white;
+    border: 15px solid #b8dfdc;
+    border-radius: 16px;
     grid-column: span 3;
     height: auto;
 }
