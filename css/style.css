@@ -284,7 +284,7 @@ img {
 }
 
 .item4 {
-    background-size: contain;
+    background-size: cover;
     border: 10px solid white;
     height: 262px;
     margin: 40px auto;
@@ -329,7 +329,7 @@ img {
 }
 
 .back4 img{
-    height: 150px;
-    width: 170px;
+    height: 100px;
+    width: 120px;
 }
 }
