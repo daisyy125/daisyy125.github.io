@@ -284,18 +284,18 @@ img {
 }
 
 .item4 {
-    background-size: contain;
+    background-size: cover;
     border: 10px solid white;
-    height: 240px;
+    height: 200px;
     margin: 40px auto;
 }
 
 .item4 h2 {
-    padding-top: 30px;
+    padding-top: 20px;
 }
 
 .item4 p {
-    padding-top: 110px;
+    padding-top: 100px;
 }
 
 .item5 {
