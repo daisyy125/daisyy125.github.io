@@ -281,10 +281,10 @@ img {
 }
 
 .item2 {
-    border-top: 50px double #d87093;
-    border-right: 50px solid #48d1cc;
-    border-left: 50px solid #9370d8;
-    border-bottom: 50px double #daa520;
+    border-top: 50px double #dccef7;
+    border-right: 50px solid #b8dfdc;
+    border-left: 50px solid #f8bcbb;
+    border-bottom: 50px double #f3d893;
     margin: 40px auto;
 }
 
